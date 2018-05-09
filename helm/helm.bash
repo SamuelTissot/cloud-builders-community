@@ -44,5 +44,8 @@ fi
 echo "Running: helm repo update"
 helm repo update
 
-echo "Running: helm $@"
+echo "Running: helm command:"
+echo ""
+echo "$@"
+echo ""
 helm "$@"
