@@ -32,8 +32,8 @@ EOF
     fi
 fi
 
-echo "Running: helm init"
-helm init
+echo "Running: helm init --upgrade"
+helm init --upgrade
 
 # check if repo values provided then add that repo
 if [[ -n $HELM_REPO_NAME && -n $HELM_REPO_URL ]]; then
